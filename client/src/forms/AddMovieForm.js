@@ -6,7 +6,7 @@ import { useParams, Redirect, useHistory, Link } from "react-router-dom";
 
 export default function AddMovieForm() {
     const params = useParams();
-    const [movie, setMovie] = useState({id: "", title: "", director: "", metascore: "", stars: []});
+    const [movie, setMovie] = useState({title: "", director: "", metascore: "", stars: []});
     const history = useHistory();
     const handleChange = e => {
         e.preventDefault();
@@ -31,14 +31,14 @@ export default function AddMovieForm() {
     return (
         <form onSubmit={handleSubmit}>
             <h1>Add Movie</h1>
-            <label> Id
+            {/* <label> Id
                 <input
                     type='number'
                     name='id'
                     value={movie.id}
                     onChange={handleChange}
                 />
-            </label>
+            </label> */}
             <label> Title
                 <input
                     type='text'

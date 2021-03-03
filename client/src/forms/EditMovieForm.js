@@ -22,7 +22,7 @@ export default function EditMovieForm() {
         .then(res => {
             console.log(res)
             setMovie({...movie, title: '', director: '', metascore:'', stars: []})
-            
+            history.push('/')
 
         })
         .catch(err => console.log(err))
