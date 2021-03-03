@@ -31,14 +31,6 @@ export default function AddMovieForm() {
     return (
         <form onSubmit={handleSubmit}>
             <h1>Add Movie</h1>
-            {/* <label> Id
-                <input
-                    type='number'
-                    name='id'
-                    value={movie.id}
-                    onChange={handleChange}
-                />
-            </label> */}
             <label> Title
                 <input
                     type='text'
