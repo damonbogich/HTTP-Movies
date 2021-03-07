@@ -70,6 +70,11 @@ export default function AddMovieForm() {
             </label>
             <button onClick={addStar}>Add Star</button>
             <button>Submit</button> 
+            {(movie.stars.length > 0) && movie.stars.map(star => {
+                console.log('hihihihi')
+                return <h1>{star}</h1>
+            })}
         </form>
+    
     )
 };
